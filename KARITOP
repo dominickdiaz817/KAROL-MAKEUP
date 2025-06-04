@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productos de Maquillaje</title>
+
+  <!-- Fuente bonita de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 20px;
+      background: linear-gradient(135deg, #fff0f5, #ffe6f2);
+      color: #4b0021;
+    }
+    h1 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 3em;
+      margin-bottom: 10px;
+      animation: blink 2s infinite;
+      color: #d6336c;
+      text-shadow: 0 0 8px #ff69b4;
+    }
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0.5; }
+    }
+    #search-container {
+      max-width: 400px;
+      margin: 0 auto 40px auto;
+      text-align: center;
+    }
+    #search-input {
+      width: 100%;
+      padding: 12px 20px;
+      font-size: 1.1em;
+      border: 2px solid #d6336c;
+      border-radius: 30px;
+      outline: none;
+      transition: box-shadow 0.3s ease;
+    }
+    #search-input:focus {
+      box-shadow: 0 0 8px #ff69b4;
+      border-color: #ff69b4;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 40px;
+    }
+    .product {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(214, 51, 108, 0.25);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .product:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(214, 51, 108, 0.4);
+    }
+    .product img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      filter: drop-shadow(0 0 4px #d6336c);
+    }
+    .product-name {
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #b22246;
+    }
+    .product-price {
+      color: #d6336c;
+      font-weight: 700;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Productos de Maquillaje</h1>
+
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Buscar producto..." />
+  </div>
+
+<body>
+  <h1>Productos de Maquillaje</h1>
+  <div class="products">
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\q.jfif" alt="Labial 1" />
+      <div class="product-name">Labial 1</div>
+      <div class="product-price">$15.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\e.jfif" alt="Labial 2" />
+      <div class="product-name">Labial 2</div>
+      <div class="product-price">$15.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\000.jfif" alt="Labial 3" />
+      <div class="product-name">Labial 3</div>
+      <div class="product-price">$15.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\ee.jfif" alt="Base 4" />
+      <div class="product-name">Base 4</div>
+      <div class="product-price">$20.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\t.webp" alt="Base 5" />
+      <div class="product-name">Base 5</div>
+      <div class="product-price">$20.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\sddd.jpeg" alt="Sombra 6" />
+      <div class="product-name">Sombra 6</div>
+      <div class="product-price">$12.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\nu.jfif" alt="Sombra 7" />
+      <div class="product-name">Sombra 7</div>
+      <div class="product-price">$12.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\gg.jfif" alt="Rubor 8" />
+      <div class="product-name">Rubor 8</div>
+      <div class="product-price">$13.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\ds.webp" alt="Rubor 9" />
+      <div class="product-name">Rubor 9</div>
+      <div class="product-price">$13.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\sws.jfif" alt="Corrector 10" />
+      <div class="product-name">Corrector 10</div>
+      <div class="product-price">$18.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\ff.png" alt="Corrector 11" />
+      <div class="product-name">Corrector 11</div>
+      <div class="product-price">$18.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\dssd.jfif" alt="Eyeliner 12" />
+      <div class="product-name">Eyeliner 12</div>
+      <div class="product-price">$14.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\wrr.png" alt="Eyeliner 13" />
+      <div class="product-name">Eyeliner 13</div>
+      <div class="product-price">$14.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\eeee.webp" alt="Mascara 14" />
+      <div class="product-name">Mascara 14</div>
+      <div class="product-price">$16.00</div>
+    </div>
+    <div class="product">
+      <img src="C:\Users\USER1\Downloads\eeeee.jfif" alt="Mascara 15" />
+      <div class="product-name">Mascara 15</div>
+      <div class="product-price">$16.00</div>
+    </div>
+  </div>
+</body>
+</html>
